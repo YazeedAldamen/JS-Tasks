@@ -1,6 +1,12 @@
-let mark = 65;
+let mark = 69;
 
-if (mark < 50){
+if (mark < 0 ){
+    document.write("Invalid Entry")
+
+}
+
+
+else if (mark >= 0 && mark < 50){
     document.write("FAIL");
 }
 
@@ -16,7 +22,7 @@ else if (mark <80 ){
 else if (mark <90 ){
     document.write("A");
 }
-else if (mark <100 ){
+else if (mark <= 100 ){
     document.write("A+");
 }
 
