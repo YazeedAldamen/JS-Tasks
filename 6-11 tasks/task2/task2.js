@@ -1,4 +1,4 @@
-for (let i=1 ; i<11;i++ ){
+/* for (let i=1 ; i<11;i++ ){
     document.write(i)
     
     if (i==2){
@@ -21,5 +21,17 @@ for (let i=1 ; i<11;i++ ){
         i+=1;
         document.write(i);
     }
+    document.write("<br/>")
+} */
+
+let x=1
+
+for (let i=1; i<5;i++){
+    
+    for (let j=1; j<(i+1);j++){
+        document.write(x);
+        x+=1;
+    }
+    
     document.write("<br/>")
 }
