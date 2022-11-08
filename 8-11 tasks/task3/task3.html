@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="font" id="font" onchange="fontfamily()">
+      <option value="">select</option>
+
+      <option value="arial" id="arial">Arial</option>
+      <option value="times" id="times">Times</option>
+    </select>
+
+    <select name="size" id="size" onchange="fontsizes()">
+      <option value="">select</option>
+      <option value="12">12px</option>
+      <option value="20">20px</option>
+    </select>
+
+    <label for="bold">Bold</label>
+    <input
+      type="checkbox"
+      name="bold"
+      value="bold"
+      id="bold"
+      onchange="bolds()"
+    />
+    <label for="italic">Italic</label>
+    <input
+      type="checkbox"
+      name="italic"
+      id="italic"
+      value="italic"
+      onchange="italics()"
+    />
+    <label for="underline">Underline</label>
+    <input
+      type="checkbox"
+      name="underline"
+      id="underline"
+      value="underline"
+      onchange="underlines()"
+    />
+    <br />
+    <textarea name="" id="area" cols="60" rows="10">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste enim harum deserunt molestias dolorem, commodi delectus non aperiam quaerat, iusto suscipit natus quod nostrum laboriosam earum unde quae vel.</textarea
+    >
+
+    <script src="task3.js"></script>
+  </body>
+</html>
