@@ -1,4 +1,4 @@
-let countires = ["Mexico", "Jordan", "Denmark"];
+let countires = ["Denmark", "Jordan","Mexico" ];
 
 function lastOfArray(x){
     let y = x.length-1;
