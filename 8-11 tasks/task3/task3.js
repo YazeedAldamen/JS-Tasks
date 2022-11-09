@@ -1,21 +1,33 @@
 function bolds(){
-    var bold=document.getElementById("bold").value;
-    if (bold == "bold"){
+    var bold=document.getElementById("bold").checked;
+    if (bold){
         document.getElementById("area").style.fontWeight="bold";
+    }
+    else {
+        document.getElementById("area").style.fontWeight="normal";
+
     }
 }
 
 function italics(){
-    var italic=document.getElementById("italic").value;
-    if (italic == "italic"){
+    var italic=document.getElementById("italic").checked;
+    if (italic){
         document.getElementById("area").style.fontStyle="italic";
+    }
+    else {
+        document.getElementById("area").style.fontStyle="normal";
+
     }
 }
 
 function underlines(){
-    var under=document.getElementById("underline").value;
-    if (under == "underline"){
+    var under=document.getElementById("underline").checked;
+    if (under){
         document.getElementById("area").style.textDecoration="underline";
+    }
+    else {
+        document.getElementById("area").style.textDecoration="none";
+
     }
 }
 
