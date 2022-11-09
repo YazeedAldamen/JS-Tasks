@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="form">
+      <form action="">
+        <label for="subject" style="display: inline-block; width: 200px"
+          >Subject:
+        </label>
+        <input type="text" id="subject" />
+        <br /><br />
+
+        <label for="area" style="display: inline-block; width: 200px"
+          >Enter a description</label
+        >
+        <textarea
+          name=""
+          id="area"
+          cols="30"
+          rows="10"
+          placeholder="Description"
+        ></textarea>
+        <br /><br />
+        <label for="usertype">User Type: </label>
+        <div id="usertype">
+            <input type="radio" id="provider" name="gender" value="provider" />
+            <label for="provider">Provider</label>
+            <input type="radio" id="buyer" name="gender" value="buyer" />
+            <label for="buyer">Buyer</label>
+        </div>
+        <br><br>
+        <label for="lang">Programming languages</label>
+        <br />
+        <div id="lang">
+          <label for="js">Javascript</label>
+          <input type="checkbox" id="js" value="js" />
+          <label for="python">Python</label>
+          <input type="checkbox" id="python" value="python" />
+          <label for="php">php</label>
+          <input type="checkbox" id="php" value="php" />
+        </div>
+        </div>
+        <br />
+        <button type="button" id="btn" onclick="gather()">Submit</button>
+      </form>
+    </div>
+    <div
+      id="card"
+      style="
+        display: none;
+        width: 600px;
+        height: 600px;
+        border: 3px solid green;
+        background-color: yellow;
+      "
+    >
+      <p id="psubject">Subject:</p>
+      <p id="pusertype">User type:</p>
+      <p id="pdescription">Description:</p>
+      <p id="plang">Programming Languages:</p>
+
+    </div>
+    <script src="task2.js"></script>
+  </body>
+</html>

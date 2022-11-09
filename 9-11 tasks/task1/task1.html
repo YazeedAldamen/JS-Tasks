@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="form">
+      <form action="">
+        <label for="name" style="display: inline-block; width: 200px"
+          >Name:
+        </label>
+        <input type="text" id="name" />
+        <br /><br />
+        <label for="age" style="display: inline-block; width: 200px"
+          >Age:
+        </label>
+        <input type="number" id="age" min="1" max="99" />
+        <br /><br />
+        <div id="gender">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <br /><br />
+        <label for="area" style="display: inline-block; width: 200px"
+          >Enter a description</label
+        >
+        <textarea
+          name=""
+          id="area"
+          cols="30"
+          rows="10"
+          placeholder="Description"
+        ></textarea>
+        <br /><br />
+        <label for="major" style="display: inline-block; width: 200px"
+          >Major & University</label
+        >
+        <input type="text" name="" id="major" />
+        <br /><br />
+        <label for="lang">Programming languages</label>
+        <br /><br />
+        <div id="lang">
+          <label for="js">Javascript</label>
+          <input type="checkbox" id="js" value="js" />
+          <label for="python">Python</label>
+          <input type="checkbox" id="python" value="python" />
+          <label for="php">php</label>
+          <input type="checkbox" id="php" value="php" />
+        </div>
+        <br />
+        <button type="button" id="btn" onclick="gather()">Submit</button>
+      </form>
+    </div>
+    <div
+      id="card"
+      style="
+        display: none;
+        width: 600px;
+        height: 600px;
+        border: 3px solid green;
+        background-color: yellow;
+      "
+    >
+      <p id="pname">Name:</p>
+      <p id="page">Age:</p>
+      <p id="pgender">Gender:</p>
+      <p id="pdescription">Description:</p>
+      <p id="pmajor">Major & Uni:</p>
+      <p id="plang">Programming Languages:</p>
+    </div>
+    <script src="task1.js"></script>
+  </body>
+</html>
