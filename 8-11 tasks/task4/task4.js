@@ -15,12 +15,12 @@ function pass() {
 function repeats(){
     let re=document.getElementById("repeat").value;
     let passwordd = document.getElementById("password").value;
-    if (re != passwordd){
+    if (re != passwordd ){
         document.getElementById('p2').style.color="red";
         document.getElementById("p2").innerHTML="the two passwords don't match"
     }
     
-    else {
+    else if ( re == passwordd && passwordd.length > 5) {
         document.getElementById("btn").style.display="block";
         document.getElementById("p2").style.display="none";
 
